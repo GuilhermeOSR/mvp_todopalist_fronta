@@ -3,8 +3,10 @@
 Bem-vindo ao TODOPALIST! Aqui, você pode gerenciar suas tarefas de uma forma divertida e produtiva. Como um usuário fanático por "Dopamina," o TODOPALIST recompensa você com XP a cada tarefa concluída.
 
 
+![Screenshot da aplicação](https://github.com/GuilhermeOSR/mvp_todopalist_fronta/blob/main/Projeto%20print.png?raw=true)
+
 # Backend
-Confira também o backend da aplicação desenvolvido em GraphQL:
+Confira também o backend da aplicação desenvolvido em GraphQL: [Backend](https://github.com/GuilhermeOSR/mvp_todopalist_backc)
 
 
 # Começando
