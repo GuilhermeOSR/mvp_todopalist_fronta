@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.container {
+    display: flex;
+    background-color: white;
+}
+
+.login {
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+  
+}
+
+.login-title {
+    margin-top: 130px;
+    color: #555791; 
+    font-size: 3.313rem;
+    font-weight: 700;
+}
+
+.btn-login {
+    margin-top: 100px;
+    text-decoration: none;
+    background: #555791;
+    padding: 20px;
+    border: 2px solid #FFFFFF;
+    width: 50%;
+    color: #FFFFFF;
+    font-size: 1.75rem;
+    font-weight: 100;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.btn-login:hover {
+    transition: .3s;
+    background: #45489e;
+}
+
+.register {
+    position: relative;
+    background-image: url("../../public/Imgs/RegisterImgs/1.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+.register.register-login {
+    position: relative;
+    background-image: url("../../public/Imgs/LoginImgs/2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 50%;
+    height: 100vh;
+}
+
+
+
+.register .register-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+}
+
+.register-title {
+    color: #ffffff;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    font-size: 4.313rem;
+    font-weight: 700;
+   
+}
+
+.register-subtitle {
+    margin-top: 80px;
+    width: 60%;
+    font-size: 2rem;
+    color: #FFFFFF;
+    opacity: 0.41;
+    font-family: lores-12, sans-serif;
+  
+}
+
+.login .form-container  {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.form-container .form-group input {
+    padding: 20px 30px;
+    width: 50%;
+    margin: 20px;
+    border-radius: 30px;
+    border: none;
+    background: #EAEEED 0% 0% no-repeat padding-box;
+    font-size: 1.75rem;
+    color: rgb(46, 44, 44);
+}
+
+::-webkit-input-placeholder {
+    color: rgb(46, 44, 44);
+    opacity: 0.5;
+    text-align: start;
+}
+
+.btn-register {
+    margin-top: 100px;
+    background: transparent;
+    padding: 20px;
+    color: #FFFFFF;
+    font-weight: 800;
+    width: 60%;
+    border: 2px solid #FFFFFF;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: .3s;
+    text-transform: uppercase;
+}
+
+.btn-register:hover {
+    transition: .3s;
+    color: rgb(46, 44, 44);
+    background: #FFFFFF;
+}
+
+/* Media queries para tornar o layout responsivo */
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+
+    }
+
+    .login {
+        width: 100%;
+    }
+
+    .register {
+        width: 100%;
+    }
+
+    .btn-login {
+        width: 80%;
+    }
+
+    .form-container .form-group input {
+        width: 80%;
+    }
+
+    .btn-register {
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .login-title {
+        margin-top: 50px;
+        font-size: 4rem;
+    }
+
+    .btn-login {
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .form-container .form-group input {
+        padding: 10px;
+        font-size: 2rem;
+    }
+
+    .register-title {
+        font-size: 4rem;
+    }
+
+    .register-subtitle {
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .btn-register {
+        padding: 10px;
+        font-size: 2rem;
+    }
+}
+
+
+@media (max-width: 360px) {
+
+    .login {
+        margin-bottom: 40px;
+    }
+    
+    .login-title {
+        font-size: 3rem;
+    }
+
+    .btn-login {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .form-container .form-group input {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+
+    .register-title {
+        font-size: 3rem;
+    }
+
+    .register-subtitle {
+        font-size: 1.5rem;
+        width: 100%;
+    }
+
+    .btn-register {
+        padding: 10px;
+        font-size: 1.5rem;
+    }
+}

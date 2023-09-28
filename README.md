@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# TODOPALIST FRONTEND Com React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Bem-vindo ao TODOPALIST! Aqui, você pode gerenciar suas tarefas de uma forma divertida e produtiva. Como um usuário fanático por "Dopamina," o TODOPALIST recompensa você com XP a cada tarefa concluída.
 
-## Available Scripts
 
-In the project directory, you can run:
+# Backend
+Confira também o backend da aplicação desenvolvido em GraphQL:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Começando
+Siga os passos abaixo para configurar e executar o frontend do TODOPALIST em seu ambiente local:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Pré-requisitos
+Certifique-se de ter o Node.js e o npm instalados em sua máquina. Você pode baixá-los em [nodejs.org](https://nodejs.org./en).
 
-### `npm run build`
+## Fonte de Dados Externa
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Esta aplicação utiliza a [Advice Slip API](https://api.adviceslip.com/) para fornecer conselhos aleatórios. A API Advice Slip oferece conselhos inspiradores e divertidos para tornar sua experiência no TODOPALIST mais interessante.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+# Instalação
 
-### `npm run eject`
+1. Clone este repositório em seu computador.
+`git clone https://github.com/seu-usuario/todopalist-frontend.git`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+2. Navegue até o diretório do projeto:
+`cd todopalist-frontend`
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+3. Instale as dependências executando o seguinte comando:
+` npm install`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+# Executando
+Agora você pode iniciar a aplicação com o seguinte comando:
+`npm start`
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+A aplicação será carregada em seu navegador padrão e estará disponível em 
+**http://localhost:3000**.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+# Docker:
+Se preferir, você também pode usar Docker para executar a aplicação em um contêiner. Certifique-se de ter o Docker instalado em seu sistema.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Na raiz do projeto, crie uma imagem Docker com o seguinte comando:
+`docker build -t topatodolist-frontend . `
 
-### Analyzing the Bundle Size
+2. Execute o contêiner com o seguinte comando:
+`docker run -p 3000:3000 todopalist-frontend`
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+A aplicação estará disponível em **http://localhost:3000**.
 
-### Making a Progressive Web App
+Aproveite o TODOPALIST para uma experiência divertida e produtiva de gerenciamento de tarefas!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

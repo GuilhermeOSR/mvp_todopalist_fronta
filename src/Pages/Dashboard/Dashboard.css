@@ -1,0 +1,465 @@
+@import url("https://use.typekit.net/nwq5tzf.css");
+
+body {
+  background-image: url("./imgs/Fundodentro.jpg");
+  background-repeat: no-repeat;
+  background-size: 200%;  
+}
+
+.dashboard {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  font-family: lores-12, sans-serif;
+  font-weight: 700;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  }
+
+  /* User-Info */
+
+  .UserInfo {
+    margin: 0% 20px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end; /* Corrigido para usar flex-end */
+    padding: 60px;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .User-stats {
+    text-align: end;
+    display: flexbox;
+    width: 40%;
+
+  }
+
+  .User-username {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
+  .User-level {
+
+    font-size: 4rem;
+  }
+
+
+  .icon .emblema {
+    width: 100px;
+    height: 100px;
+    
+  }
+
+
+  /* Xp Bar */
+  .User-xpbar {
+    width: 100%;
+    background-color: #ccc;
+    height: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .User-xpbar-fill {
+    height: 100%;
+    background-color: #5E4998; /* Cor de preenchimento da barra de XP */
+    transition: width 0.5s ease-in-out; /* Adicione uma transição suave para animar o preenchimento */
+  }
+  
+  .User-xp {
+    margin: 0;
+    padding: 0 10px;
+    
+    color: #fff; /* Cor do texto */
+  }
+
+ 
+/* Tarefas */
+
+  
+ .book-container {
+  width: 100%;
+  margin-top: -100px;
+  z-index: 500;
+ }
+
+ .book {
+  background-image: url("./imgs/livro.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 50vh;
+  width: 100%;
+
+}
+
+ .TaskList {
+  display: flex;
+  color: black;
+  max-width: 50%;
+  padding: 30px 60px;
+
+}
+
+.TaskList ul {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  list-style-type: none;
+  background-color: transparent;
+
+}
+
+.TaskList li {
+  align-items: center;
+  font-size: 1rem;
+
+}
+
+.TaskList input {
+  display: flex;
+  align-items: center;
+
+}
+
+.TaskList .content {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding: 10px;
+    max-width: 100%;
+}
+
+.TaskList .content h3 {
+  font-size: 1.5rem;
+}
+
+.TaskList .content .completed {
+  text-decoration: line-through;
+  text-decoration-color: rgb(46, 44, 44); /* Cor do riscado */
+  color: rgb(109, 104, 104);
+}
+
+.TaskList .content .description {
+  display: flex;
+  justify-content: flex-start;
+
+  font-size: 1rem;
+}
+
+.TaskList .check-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.TaskList .checkbox {
+  width: 50px;
+  height: 50px;
+
+}
+
+
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+
+/* Estilos para o botão de excluir */
+.btn-wrapper button {
+  background-color: #45489e; /* Fundo laranja */
+  color: #fff; /* Texto preto */
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+
+}
+
+
+/* Add Task Card */
+
+.carta1 {
+  border: none;
+  border-radius: 0px;
+  position:relative;
+  margin-top: 20px;
+  right: 35%;
+  z-index: 200;
+  cursor: pointer;
+  width: 100px;
+  height: 150px;
+  transition: .6s;
+}
+
+.carta1:hover {
+  transition: .6s;
+  transform: translateY(-10%);
+}
+
+/* Modal Styles */
+
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6); /* Fundo semi-transparente para destacar o modal */
+  backdrop-filter: blur(10px);
+  z-index: 999; /* Certifique-se de que o modal apareça sobre outros elementos */
+ 
+}
+
+.modal {
+  background-color: #8780D2; /* Cor de fundo do modal */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: start;
+}
+
+
+.modal-title {
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+}
+
+.modal input, textarea {
+
+  background-color: transparent;
+  border: 2px solid #FFFFFF;
+  outline: none;
+  padding: 10px ;
+  font-size: 1.2rem;
+  margin: 20px 0 20px 0px;
+}
+
+/* Select Styles */
+
+.select-container {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  min-width: 250px;
+  margin-top: 20px;
+  background-color: transparent;
+  height: 40px;
+}
+
+.select-box {
+  outline: none;
+  border: 2px solid #FFFFFF;
+  padding: 0 30px 0 15px;
+  width: 50%;
+  cursor: pointer;
+  
+
+}
+
+.select-box, .modal ::placeholder, select,option{
+  color: #fff;
+  background: #8780D2;
+  opacity: 0.7;
+  font-size: 1.2rem;
+}
+
+.close-btn {
+  position: absolute;
+  right: 0;
+  top: 0;
+  Padding: 30px 30px;
+}
+
+
+.btn-send {
+  background: transparent;
+  padding: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: .6s;
+  
+}
+
+.btn-send:hover {
+  background-color: white;
+  color: #4d5455;
+}
+
+/*Error Message */
+.error {
+  color: #d84d49;
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilos para o botão de fechar */
+.close-button {
+
+  width: 2%;
+  display: flex;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  color: #666; /* Cor do ícone de fechar */
+}
+
+/* Adicione essas classes ao seu arquivo CSS */
+
+.diff {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  
+}
+
+.Fácil {
+
+  content: 'asda';
+  width: 30px;
+  height: 5px;
+  background: green;
+  color: green;
+}
+
+.Médio {
+  content: 'asda';
+  width: 30px;
+  height: 5px;
+  background: orange;
+  color: orange;
+}
+
+.Difícil {
+  content: 'asda';
+  width: 30px;
+  height: 5px;
+  background: red;
+  color: red;
+}
+
+
+
+/* Adicione estilos para o contêiner de paginação */
+
+
+.pagination-container {
+  display: flex;
+  justify-content: space-between; /* Alinhe os botões à esquerda e à direita */
+  margin-top: 20px; /* Ajuste o espaçamento conforme necessário */
+}
+
+.pagination-container .potxp {
+  position: absolute;
+  width: 200px;
+  width: 200px;
+  right: 24%;
+}
+
+
+/* Estilos para os botões de página */
+.pagination-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Estilos para os botões desabilitados */
+.pagination-button[disabled] {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+/* Adicione espaço entre os botões */
+.pagination-button + .pagination-button {
+  margin-left: 10px;
+}
+
+
+
+/* Estilos para os botões de página */
+.pagination-button {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  position: absolute;
+  bottom: 55%;
+}
+
+
+/* Estilos para o botão de página anterior */
+
+.pagination-button.previous {
+  left: 57%;
+  bottom:20%;
+}
+
+/* Estilos para o botão de próxima página */
+.pagination-button.next {
+  left: 67%;
+  bottom: 20%;
+}
+
+
+
+/* Estilos para os botões desabilitados */
+.pagination-button[disabled] {
+  background-color: #999;
+  cursor: not-allowed;
+}
+
+.logout {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+
+.LogoutButton {
+  display: flex;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 30px;
+  flex-direction: column;
+  cursor: pointer;
+  transition: .6s;
+  border: none;
+}
+
+.LogoutButton:hover {
+  background: rgb(212, 59, 59);
+  transition: .6s;
+  color: #fff;
+
+}
